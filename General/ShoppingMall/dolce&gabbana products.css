@@ -1,0 +1,10 @@
+.column_right_border {
+  border-right: solid;
+  border-color: red;
+  border-width: 1px;
+}
+.row_bottom_border {
+  border-bottom: solid;
+  border-color: red;
+  border-width: 2px;
+}

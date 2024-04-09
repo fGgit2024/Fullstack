@@ -1,0 +1,13 @@
+.flex_father {
+  height: 150px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.flex_son {
+  width: 80px;
+  height: 80px;
+  background-color: silver;
+  margin: 5px;
+}

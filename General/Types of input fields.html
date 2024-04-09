@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input fields</title>
+    <style type="text/css"></style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1> Tyeps of input fields</h1>
+    
+      <div>
+        <!-- הגדרה שאין חובת מילוי ברמת הטופס עצמו - דוגמא -->
+        <!-- <form action="https://casdfasgfsgsdg" novalidate>
+          <input type="text" name="q" />
+          <input type="submit" name="search" value="Search" />
+        </form> -->
+        
+      </div>
+
+      <div>
+        <input type="text" name="text" maxlength="30" id="id" value="Input text">
+        <!-- הגדרה שיש חובת מילוי -->
+        <input type="text" name="text" maxlength="30" id="id" value="Input text" required>
+        <!-- הגדרה שאין חובת מילוי -->
+        <input type="text" name="text" maxlength="30" id="id" value="Input text" formnovalidate>
+      </div>
+    
+      <div>
+        <input type="button" name="button" value="Click here">
+      </div>
+   
+    <div>
+      <label for="">The description of the choice</label>
+      <input type="checkbox" name="checkbox">
+    </div>
+
+    <div>
+      <input type="color" name="color">
+    </div>
+
+    <div>
+      <input type="date" name="date">
+    </div>
+    
+    <input type="email" name="email" value="Email adress">
+
+    <div>
+      <input type="number" name="number" min="0" max="10">
+    </div>
+
+   
+    <div>
+      Sex:
+      <input type="radio"  name="button"/>
+      <label for="">Male</label>
+      <input type="radio"  name="button"/>
+      <label for="">Female</label>
+      <!-- !!!אחרת לא יהיה בינם קשר name חשוב שלכל הכפתורים יהיה אותו -->
+    </div>
+   
+    <div>
+      <span>0</span>
+      <!-- <label>0</label> -->
+      <input type="range" name="range" min="0" max="100" value="0">
+      <span>100</span>
+      <!-- <label>100</label> -->
+    </div>
+
+    <div>
+      <input type="reset" name="reset" value="reset">
+    </div>
+
+    <div>
+      <input type="search" name="search" value="search">
+    </div>
+    
+    <div>
+      <input type="submit" name="submit" value="submit">
+    </div>
+    
+    <dive>
+      <select name="slect">
+        <option title="select">Select</option>
+        <option value="select">First select</option>
+        <option value="select">Secound select</option>
+      </select>
+    </dive>
+
+    <div>
+      <select name="size">
+        <option value="">41</option>
+        <option value="">42</option>
+        <option value="">43</option>
+        <option value="">44</option>
+    </div>
+      </select>
+
+      <div>
+        <h1> Ynet </h1>
+        <img src="https://ynet-pic1.yit.co.il/picserver5/wcm_upload/2021/06/02/BylDa46E900/ynet_menu_logo_2x.png"
+            alt="">
+        <form action="https://www.ynet.co.il/category/3340" method="get">
+            <input type="text" name="q">
+            <input type="submit" value="Search">
+        </form>
+   
+
+  </body>
+</html>

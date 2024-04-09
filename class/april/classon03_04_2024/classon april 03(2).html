@@ -1,0 +1,64 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class on april 03 exercise 2</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Class on april 03 exercise 2</h1>
+    <div>
+      <span>Selected Books: </span>
+      <span id="selectedBooksNumber"> </span>
+    </div>
+    <div id="actions">
+      <div style="display: flex; justify-content: center">
+        <h2 id="totalResult"></h2>
+      </div>
+      <div class="display-flex">
+        <button class="btn btn-danger" onclick="clearBooks()">
+          Delete All Books
+        </button>
+        <button class="btn btn-success" onclick="search()">Search</button>
+        <input
+          id="searchInput"
+          type="text"
+          class="form-control"
+          onclick="  search()"
+          placeholder="Search a book"
+          aria-describedby="basic-addon1"
+        />
+        <!-- <input id="searchInput" type="text" class="form-control" onkeyup="search()" placeholder="Search a book"
+                aria-describedby="basic-addon1"> -->
+      </div>
+    </div>
+
+    <div id="booksList"></div>
+    <script src="./books.js"></script>
+    <script src="class on april 03(2).js"></script>
+  </body>
+</html>

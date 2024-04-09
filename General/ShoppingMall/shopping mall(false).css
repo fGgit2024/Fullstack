@@ -1,0 +1,99 @@
+/* .main_container {
+  background-color: yellow;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+} */
+.main_stores {
+  background-color: cadetblue;
+  width: 100%;
+  /* margin-left: 5%; */
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.store_1 {
+  background-color: chartreuse;
+  width: 24.5%;
+  height: 150px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  text-align: center;
+}
+.store_2 {
+  background-color: gold;
+  width: 24.5%;
+  height: 150px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  text-align: center;
+}
+.store_3 {
+  background-color: lime;
+  width: 24.5%;
+  height: 150px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  text-align: center;
+}
+.store_4 {
+  background-color: coral;
+  width: 25%;
+  height: 150px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  text-align: center;
+}
+.column_right_border {
+  border-right: solid;
+  border-color: red;
+  border-width: 1px;
+}
+.row_bottom_border {
+  border-bottom: solid;
+  border-color: red;
+  border-width: 2px;
+}
+/* .butoon_style {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-top: 10px;
+  height: 20px;
+}
+.store_buttons1 {
+  background-color: darksalmon;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.store_buttons2 {
+  background-color: rgb(233, 122, 192);
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.store_buttons3 {
+  background-color: rgb(122, 233, 141);
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+} */

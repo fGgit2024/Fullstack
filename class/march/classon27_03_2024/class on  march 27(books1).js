@@ -1006,17 +1006,37 @@ var books = [
   },
 ];
 
-function getBooksByTitle(title) {
-  var result = [];
-  var breackPoint = 0;
-  for (let index = 0; index < books.length && breackPoint == 0; index++) {
-    var singleBook = books[index];
-    if (singleBook.title.toLowerCase() === title.toLowerCase()) {
-      result.push(singleBook);
-      breackPoint = 1;
-    }
+// function getBooksByTitle(title) {
+//   var result = [];
+//   var breackPoint = 0;
+//   for (let index = 0; index < books.length && breackPoint == 0; index++) {
+//     var singleBook = books[index];
+//     if (singleBook.title.toLowerCase() === title.toLowerCase()) {
+//       result.push(singleBook);
+//       breackPoint = 1;
+//     }
+//   }
+//   return result;
+// }
+function getBooksByTitle(title, books) {
+  if (typeof title !== "string") {
+    console.log("typeof title !== string => " + title);
+    return;
   }
-  return result;
+  if (!Array.isArray(books)) {
+    console.log("books is not array");
+    return;
+  }
+  // console.log("title => " + title);
+
+  // let singelBook = books.find(function (currentBook) {
+  //   return currentBook.title.toLowerCase() === title.toLowerCase();
+  // });
+  // console.log("singelBook.title => " + singelBook.title);
+  // return singelBook;
+  return books.find(
+    (currentBook) => currentBook.title.toLowerCase() === title.toLowerCase()
+  );
 }
 
-console.log(getBooksByTitle("The Tin Drum"));
+resoult = console.log(getBooksByTitle("Fairy tales", books));

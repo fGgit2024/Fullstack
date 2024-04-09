@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product list</title>
+    <style>
+      h1{background-color: green; border:solid 2px yellow; width: 170px; height: 150px;margin-left: 500px;}
+      #OrderPizza{height: 70px;}
+      .PizzaHeader{height: 90px;margin-left: 150px;}
+      .SizePizza{margin-left: 325px;}
+      .ManuePizza{margin-left: 325px;}
+      .ToppingsPizza{margin-left: 325px;}
+      .RemarksPizza{margin-left: 325px;}
+      .SbmitPizza{margin-left: 106px;}
+      .InterManue{margin-left: 13px;}
+      .SizePizzaRadio{margin-left: 65px;}
+      .Textarea{margin-left: 41px;}
+    </style>
+  </head>
+
+  <body style="background-color: aqua;">
+    <div>
+      <h1 id=OrderPizza>Order pizza</h1>
+
+      <div>
+          <div style="background-color: red; height: 205px;padding-left: 5px;padding-top: 50px;">
+            <img width="100px" height="100px" src="pizza logo.jpg" alt="" />
+
+            <form action="https://order.pizzahut.co.il/order/order-type"
+            method="get">
+
+            <div class="ManuePizza">
+              <span>Pizza menue:</span>
+              <span class="InterManue">
+                <input type="checkbox" name="Type" value="margarita" /> <span>Margarita</span>
+                <input type="checkbox" name="Type" value="napolitana" /><span>Napolitana</span>
+                <input type="checkbox" name="Type" value="varde" /><span>Varde</span>
+                <input type="checkbox" name="Type" value="viola" /><span>Viola</span>
+                <input type="checkbox" name="Type" value="sicilian" /><span>Sicilian</span>
+              </span>
+            </div>
+            <div class="ToppingsPizza">
+              <span>Pizza toppings:</span>
+              <input type="checkbox" name="toppings" value="olives" /><span>Olives</span>
+              <input type="checkbox" name="toppings" value="mushrooms" /><span>Mushrooms</span>
+              <input type="checkbox" name="toppings" value="cheese" /><span>Cheese</span>
+              <input type="checkbox" name="toppings" value="tuna" /><span>Tuna</span>
+              <input type="checkbox" name="toppings" value="onion" /><span>Onion</span>
+            </div>
+
+              <div class="SizePizza"><span>Size:</span>
+                <span  class="SizePizzaRadio">
+                  <input type="radio" name=size value="L"/><span>Large</span>
+                  <input type="radio" name=size value="M"/><span>Medium</span>
+                  <input type="radio" name=size value="S"/><span>Small</span>
+                </span>
+ 
+             </div>
+            
+            <div class="RemarksPizza">
+              <span>Remarks:</span>
+              <span class="Textarea">
+                <input type="textarea" width="100px" heith="150px" value="Thenk you for your order" name="q"/>
+              
+                <div class="SbmitPizza"> 
+                  <input type="submit" value="To order click here" />
+                </div>
+              </span>
+  
+
+            </div>
+
+          </form>
+
+    </div>
+
+    <table border="5" width="10" cellspacing="10" cellpadding="5">
+      <thead>
+        <h2 class="PizzaHeader">Order history</h2>
+        <tr>
+          <th>Product</th>
+
+          <th>Price</th>
+
+          <th>Date</th>
+
+          <th>Category</th>
+
+          <th>Image</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Mrgrita Pizza</td>
+
+          <td>2$</td>
+
+          <th>04/02/2024</th>
+
+          <td>Vegetarian</td>
+
+          <td>
+            <img
+              src="https://buyme.co.il/files/packages/private/packageImage11617340.jpg?v=1640609578?"
+              alt=""
+              height="20px"
+              width="20px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Paparoni Pizza</td>
+
+          <td>2$</td>
+
+          <th>04/02/2024</th>
+
+          <td>Meaty</td>
+
+          <td>
+            <img src="papperoni pizza.jpg" alt="" height="20px" width="20px" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Olive pizza</td>
+
+          <td>3$</td>
+
+          <th>04/02/2024</th>
+
+          <td>Vegetarian</td>
+
+          <td>
+            <img src="olives pizza.jpg" alt="" height="20px" width="20px" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mushroom pizza</td>
+
+          <td>2.5$</td>
+
+          <th>04/02/2024</th>
+
+          <td>Vegetarian</td>
+
+          <td>
+            <img src="mushroom-pizza.jpg" alt="" height="20px" width="20px" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Fries</td>
+
+          <td>1$</td>
+
+          <th>04/02/2024</th>
+
+          <td>Vegetarian</td>
+
+          <td>
+            <img src="fries.jpg" alt="" height="20px" width="20px" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </body>
+</html>

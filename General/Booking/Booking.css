@@ -1,0 +1,27 @@
+.logo_position {
+  position: absolute;
+  top: 17.2px;
+  left: 9px;
+}
+.hover_right_buttons :hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.hover_left_buttons :hover {
+  border-color: yellow;
+}
+.right_buttons {
+  position: relative;
+  top: 18px;
+}
+.left_buttons1 {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+.left_buttons2 {
+  position: relative;
+  top: 60px;
+  left: 113px;
+}

@@ -1007,16 +1007,19 @@ var books = [
 ];
 
 function getBooksByAuthor(author) {
-  var result = [];
-  var breackPoint = 0;
-  for (let index = 0; index < books.length && breackPoint == 0; index++) {
-    var singleBook = books[index];
-    if (singleBook.author.toLowerCase() === author.toLowerCase()) {
-      result.push(singleBook);
-      breackPoint = 1;
-    }
-  }
-  return result;
+  // var result = [];
+  // var breackPoint = 0;
+  // for (let index = 0; index < books.length && breackPoint == 0; index++) {
+  //   var singleBook = books[index];
+  //   if (singleBook.author.toLowerCase() === author.toLowerCase()) {
+  //     result.push(singleBook);
+  //     breackPoint = 1;
+  //   }
+  // }
+  // return result;
+  return books.find(
+    (singleBook) => singleBook.author.toLowerCase() === author.toLowerCase()
+  );
 }
 
-console.log(getBooksByAuthor("Herman Melville"));
+resoult = console.log(getBooksByAuthor("Herman Melville"));

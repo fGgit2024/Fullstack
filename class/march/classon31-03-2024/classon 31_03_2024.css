@@ -1,0 +1,7 @@
+.button-center {
+  align-items: center;
+}
+
+.button-center button {
+  height: 25px;
+}

@@ -58,7 +58,8 @@ function moveNameToDelete(TheMoveNameToDelete) {
       console.log(
         "Delete resoult[" + index + "] : " + MoveNameToDelete.movieName
       );
-      resoult.splice(index, 1, "Deleted");
+      // resoult.splice(index, 1, "Deleted");
+      resoult.splice(index, 1);
     }
   }
   return resoult;
